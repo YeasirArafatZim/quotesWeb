@@ -1,0 +1,147 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.full-page{
+    background-color: #212E3E;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: #4B9CFE;
+    width: 50%;
+    height: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content-box{
+    background-color: #ffffff;
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(40deg);
+    height: 60px;
+    width: 140px;
+    cursor: pointer;
+    background-color: #AEC6DF;
+    margin-top: -10px;
+    margin-right: -45px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.icon:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.icon:hover > .img_icon{
+    width: 30px;
+}
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.img_icon{
+    width: 28px;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    transform: rotate(-45deg);
+    animation: rot 1s linear;
+}
+.quotation{
+    font-size: 100px;
+    margin: 0px;
+    margin-top: 20px;
+    height: 30px;
+    margin-left: 30px;
+    color: #d3d3d3;
+}
+.text{
+    font-family: 'Kurale', serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #757575;
+    font-size: 22px;
+    line-height: 25px;
+}
+.author{
+    font-family: 'Kurale', serif;
+    float: right;
+    margin-right: 30px;
+    color: #3b3b3b;
+}
+#btn{
+    width: 100%;
+    background-color: #006ECE;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+#btn:hover {
+    background-color: #055ca8;
+}
+
+@media only screen and (max-width: 1200px) {
+    .text{
+        font-size: 20px;
+    }
+    .author{
+        font-size: 16px;
+    }
+    .box{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .text{
+        font-size: 18px;
+    }
+    .author{
+        font-size: 14px;
+    }
+    .box{
+        width: 65%;
+    }
+    #btn{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .text{
+        font-size: 16px;
+    }
+    .author{
+        font-size: 12px;
+    }
+    .box{
+        width: 80%;
+    }
+    #btn{
+        font-size: 12px;
+    }
+}
